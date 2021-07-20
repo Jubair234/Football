@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* All nav and banner styles*/
+
+header{
+    width: 100%;
+    background: #2106bb;
+    height: 100vh;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top:10px ;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.links{
+    color: #fff;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+a:nth-child(1){
+    margin-left: -20px;
+}
+a:hover{
+    background: #dd14ab;
+    color: #fff;
+}
+button{
+    background: #dd1461;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.side{
+    margin-left: 3px;
+}
+
+.flex-hero{
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    
+}
+.text{
+    flex-basis: 50%;
+    
+}
+.text h2{
+    font-size: 65px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #fff;
+    margin:40px 0;
+
+
+}
+
+.image{
+    flex-basis: 48%;
+    
+    
+
+}
+.image img{
+    width: 100%;
+}
+
+/* second section all grid layout styles */
+
+.grid_Members{
+    width: 75%;
+    margin: 50px auto;
+}
+.grid-box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+
+}
+.grid{
+    box-shadow: 7px 7px 10px 10px #aaaaaa;
+    padding:10px;
+}
+.grid:hover{
+
+    transform: translateY(-5px);
+    transition: .3s;
+}
+.grid .imgbox{
+    width: 100%;
+   
+}
+
+.imgbox img{
+    width: 100%;
+}
+
+.grid h3{
+    width: 80%;
+    font-family: 'Poppins',sans-serif;
+    margin: 10px 0;
+}
+
+.grid p{
+    width: 80%;
+    font-family: 'Poppins',sans-serif;
+    margin: 10px 0;
+}
+
+/* Section with design like banner section */
+
+
+.flex-match{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+
+
+}
+.flex-match .text{
+    flex-basis: 50%;
+    
+}
+.flex-match .text h2{
+    font-size: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #000;
+    margin:20px 0;
+    word-spacing: 4px;
+
+
+}
+.flex-match .text p{
+    width: 350px;
+    color: rgba(19, 18, 18, 0.733);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin:20px 0;
+    text-align: justify all;
+
+}
+
+.flex-match .image{
+    flex-basis: 48%;
+
+}
+.flex-match .image img{
+    width: 100%;
+}
+
+/* footer Styles */
+
+footer{
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer img.logo{
+    width: 20%;
+}
+footer .socail{
+   background: #fff;
+}
+
+footer .socail img{
+    width: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+footer .socail img:hover{
+    background:#dd1461;
+    border-radius: 50%;
+    color: #fff;
+}
+footer p{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+/* Media Query*/
+
+@media only screen and (max-width: 600px) {
+    
+    
+    .nav{
+        padding: 10px 0;
+
+        }
+    .nav a{
+        font-size: 11px;
+        padding: 2px 3px;
+        font-weight: 700;
+        
+        
+        }
+    header button{
+        padding: 4px 8px;
+        font-size: 11px;
+        font-weight: 700;
+        }
+
+
+    .flex-hero{
+        padding-top: 15px;
+        flex-direction: column;
+        
+        }
+
+    .flex-hero .text h2{
+        font-size: 40px;
+        margin: 10px 0;
+        line-height: 1.3;
+        }
+
+    .flex-hero .text button{
+        font-size:16px ;
+        padding:8px 16px;
+        margin-bottom:20px;
+        }
+
+    .flex-hero .image{
+
+        margin-bottom: 50px !important;
+
+    }
+
+    .grid-box{
+        grid-template-columns: 1fr;
+        }
+
+    .flex-match {
+        flex-direction: column;
+        }
+    .flex-match .text{
+        width: 100%;
+        }
+
+    .flex-match h2{
+        font-size: 36px !important;
+        font-weight: 600 !important;
+        line-height: 1.2;
+        word-spacing: 2px;
+        
+        }
+    .flex-hero p{
+        text-align: justify;
+        }
+    .flex-match button{
+        margin-bottom: 30px;
+        font-size: 16px;
+        padding:8px 16px;
+        font-weight: 600;
+        }
+    .flex-match .image{
+        width: 100%;
+        }
+
+    footer img.logo{
+        width: 50%;
+        }
+
+    footer .socail img{
+        width: 40px;
+        }
+
+
+
+} 
+
